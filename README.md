@@ -67,3 +67,8 @@ Teléfono publicado en la ficha de Uber Eats: +34 633 602 527.
 Subir `index.html`, `styles.css`, `script.js` y la carpeta `assets` al directorio público (`public_html` normalmente).
 
 No requiere Node.js, base de datos ni compilación.
+
+
+## Fotos para la versión comercial
+
+La web está preparada para incorporar fotos reales de La Patrona en `assets/`. Consulta `assets/README.md` para ver exactamente qué fotos hacen falta.

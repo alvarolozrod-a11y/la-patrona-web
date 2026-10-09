@@ -15,7 +15,7 @@ const UBER_EATS_URL = "https://www.ubereats.com/es/store/la-patrona/jO6tybw8VfOr
 // Edita aquí nombres, descripciones, categorías y precios.
 // Este es el único bloque que necesitas tocar para actualizar
 // fácilmente la carta de la web.
-// Precios de referencia consultados online el 08/10/2026.
+// Precios actuales de la carta web.
 // =========================================================
 
 const carta = [

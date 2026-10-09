@@ -23,7 +23,6 @@
   <header class="site-header" id="inicio">
     <div class="container nav">
       <a class="brand" href="#inicio" aria-label="La Patrona, inicio">
-        <span class="brand__mark">LP</span>
         <span>
           <strong>LA PATRONA</strong>
           <small>COCINA COLOMBIANA</small>
@@ -35,11 +34,8 @@
       <nav class="nav__links" aria-label="Navegación principal">
         <a href="#carta">Carta</a>
         <a href="#nosotros">La casa</a>
+        <a href="#opiniones">Opiniones</a>
         <a href="#visitanos">Visítanos</a>
-        <!-- UBER EATS — CTA / REDIRECCIÓN
-             Si el comercio NO desea trabajar con Uber Eats, elimina este enlace
-             y el bloque CTA correspondiente de esta página. -->
-        <a class="button button--small button--accent" href="https://www.ubereats.com/es/store/la-patrona/jO6tybw8VfOr_xKT1TRIRQ" target="_blank" rel="noopener">Pedir en Uber Eats ↗</a>
       </nav>
     </div>
   </header>
@@ -54,7 +50,7 @@
           <p class="hero__lead">Recetas con carácter, platos para compartir y ese sabor de casa que convierte una comida en un recuerdo.</p>
           <div class="hero__actions">
             <a class="button button--primary" href="#carta">Ver la carta</a>
-            <a class="button button--ghost" href="#visitanos">Cómo llegar</a>
+            <a class="button button--ghost" href="#visitanos">Cómo encontrarnos</a>
           </div>
           <div class="hero__note">
             <span class="seal">★</span>
@@ -94,7 +90,6 @@
         </div>
         <div>
           <p>La Patrona combina el carácter de la cocina colombiana con una carta amplia pensada para distintos momentos: desayunos, platos contundentes, raciones para compartir, arepas, empanadas y bebidas colombianas.</p>
-          <p class="muted">La propuesta que aparece aquí está construida a partir de la carta pública disponible online y organizada para que el cliente encuentre lo que busca sin perderse.</p>
         </div>
       </div>
     </section>
@@ -111,7 +106,7 @@
 
         <div class="featured-grid">
           <article class="dish-card dish-card--hero">
-            <div class="dish-art dish-art--picada"><span>Picada</span></div>
+            <div class="dish-art dish-art--picada"><img src="assets/picada-colombiana.jpg" alt="Picada Colombiana de La Patrona" onerror="this.style.display='none'"><span>Picada</span></div>
             <div class="dish-card__body">
               <div class="dish-card__meta"><span>Para compartir</span><b>36 €</b></div>
               <h3>Picada Colombiana</h3>
@@ -120,7 +115,7 @@
           </article>
 
           <article class="dish-card">
-            <div class="dish-art dish-art--bandeja"><span>Bandeja</span></div>
+            <div class="dish-art dish-art--bandeja"><img src="assets/bandeja-paisa.jpg" alt="Bandeja Paisa de La Patrona" onerror="this.style.display='none'"><span>Bandeja</span></div>
             <div class="dish-card__body">
               <div class="dish-card__meta"><span>Plato combinado</span><b>26 €</b></div>
               <h3>Bandeja Paisa</h3>
@@ -129,7 +124,7 @@
           </article>
 
           <article class="dish-card">
-            <div class="dish-art dish-art--arepa"><span>Arepa</span></div>
+            <div class="dish-art dish-art--arepa"><img src="assets/arepa-chorizo.jpg" alt="Arepa con Chorizo de La Patrona" onerror="this.style.display='none'"><span>Arepa</span></div>
             <div class="dish-card__body">
               <div class="dish-card__meta"><span>Delicia colombiana</span><b>8 €</b></div>
               <h3>Arepa con Chorizo</h3>
@@ -147,7 +142,7 @@
             <p class="eyebrow">Carta</p>
             <h2>De Colombia <em>a tu mesa.</em></h2>
           </div>
-          <p class="section-head__desc">Precios de referencia tomados de la carta pública online consultada el 8 de octubre de 2026. Pueden variar entre plataformas y local.</p>
+          <p class="section-head__desc">Una selección amplia de sabores colombianos, desayunos, raciones, platos y bebidas para disfrutar en La Patrona.</p>
         </div>
 
         <div class="menu-tabs" role="tablist" aria-label="Categorías de la carta">
@@ -166,13 +161,9 @@
     <section class="story section" id="nosotros">
       <div class="container story__grid">
         <div class="story__visual">
+          <img class="story__photo" src="assets/interior.jpg" alt="Interior de La Patrona en Alcorcón" onerror="this.style.display='none'">
           <div class="story__stamp">SABOR<br><span>COLOMBIANO</span></div>
-          <div class="story__shape story__shape--one"></div>
-          <div class="story__shape story__shape--two"></div>
-          <div class="story__plate">
-            <span>AREPA</span>
-            <small>hecha para compartir</small>
-          </div>
+          <div class="story__fallback">LA PATRONA</div>
         </div>
         <div class="story__copy">
           <p class="eyebrow">La casa</p>
@@ -187,19 +178,38 @@
       </div>
     </section>
 
-    <section class="cta section">
-      <div class="container cta__box">
-        <div>
-          <p class="eyebrow">¿Qué te apetece hoy?</p>
-          <h2>Que empiece el <em>antojo.</em></h2>
-          <p>Consulta la carta, acércate al local o haz tu pedido online.</p>
+    <section class="reviews section" id="opiniones">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Opiniones</p>
+            <h2>Lo que dicen <em>nuestros clientes.</em></h2>
+          </div>
+          <div class="reviews__rating" aria-label="Valoración actual en Google">
+            <strong>4,6</strong><span>/ 5</span>
+            <small>Valoración visible en Google Maps</small>
+          </div>
         </div>
-        <div class="cta__actions">
-          <a class="button button--light" href="#carta">Explorar carta</a>
-          <!-- UBER EATS — CTA / REDIRECCIÓN
-               Si el comercio NO desea trabajar con Uber Eats, elimina este botón. -->
-          <a class="button button--accent" href="https://www.ubereats.com/es/store/la-patrona/jO6tybw8VfOr_xKT1TRIRQ" target="_blank" rel="noopener">Pedir en Uber Eats ↗</a>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Comida fabulosa servida con un mimo al cliente increíble.”</blockquote>
+            <p>Reseña reciente · Google</p>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Buena comida y mejor servicio al mejor precio.”</blockquote>
+            <p>Reseña reciente · Google</p>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“La comida estaba muy sabrosa, las raciones generosas y la atención excepcional.”</blockquote>
+            <p>Reseña reciente · Google</p>
+          </article>
         </div>
+
+        <p class="reviews__note">Las reseñas mostradas se pueden sustituir por las capturas o textos que el restaurante quiera destacar antes de publicar la versión definitiva.</p>
       </div>
     </section>
 
@@ -210,12 +220,11 @@
           <h2>Nos vemos en <em>Alcorcón.</em></h2>
           <p class="visit__address">Av. del Alcalde José Aranda, 53 · Local 7<br>28924 Alcorcón, Madrid</p>
           <div class="visit__actions">
-            <a class="button button--primary" href="https://www.google.com/maps/search/?api=1&query=La%20Patrona%2C%20Av.%20del%20Alcalde%20Jos%C3%A9%20Aranda%2053%2C%20Alcorc%C3%B3n" target="_blank" rel="noopener">Abrir en Google Maps ↗</a>
-            <a class="button button--ghost-dark" href="tel:+34633602527">Llamar</a>
+            <a class="button button--primary" href="https://www.google.com/maps/search/?api=1&query=La%20Patrona%2C%20Av.%20del%20Alcalde%20Jos%C3%A9%20Aranda%2053%2C%20Alcorc%C3%B3n" target="_blank" rel="noopener">Cómo encontrarnos ↗</a>
           </div>
         </div>
         <div class="hours-card">
-          <p class="eyebrow">Horario online de referencia</p>
+          <p class="eyebrow">Horario de apertura</p>
           <div class="hours">
             <div><span>Lunes</span><b>09:00 – 22:00*</b></div>
             <div><span>Martes</span><b>09:00 – 22:00*</b></div>
@@ -225,7 +234,6 @@
             <div><span>Sábado</span><b>09:00 – 19:00*</b></div>
             <div><span>Domingo</span><b>09:00 – 19:00*</b></div>
           </div>
-          <small>*Los horarios pueden cambiar según el servicio/canal. Conviene confirmar antes de publicar la web definitiva.</small>
         </div>
       </div>
     </section>
@@ -234,15 +242,16 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div class="brand brand--footer">
-        <span class="brand__mark">LP</span>
         <span><strong>LA PATRONA</strong><small>COCINA COLOMBIANA</small></span>
       </div>
       <div class="footer__links">
         <a href="#carta">Carta</a>
         <a href="#nosotros">La casa</a>
+        <a href="#opiniones">Opiniones</a>
         <a href="#visitanos">Visítanos</a>
-        <!-- UBER EATS — CTA / REDIRECCIÓN: eliminar este enlace si no se utiliza. -->
-        <a href="https://www.ubereats.com/es/store/la-patrona/jO6tybw8VfOr_xKT1TRIRQ" target="_blank" rel="noopener">Uber Eats</a>
+        <!-- UBER EATS — CTA / REDIRECCIÓN
+             Actualmente oculto. Si el comercio decide usar Uber Eats en el futuro,
+             este es el lugar indicado para volver a añadir el enlace. -->
       </div>
       <div class="footer__legal">© <span id="year"></span> La Patrona · Alcorcón</div>
     </div>
