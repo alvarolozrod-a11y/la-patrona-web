@@ -167,3 +167,69 @@ document.querySelectorAll(".nav__links a").forEach(a=>a.addEventListener("click"
 
 document.getElementById("year").textContent = new Date().getFullYear();
 renderMenu("colombianas");
+
+
+// ===================== CARRUSEL DE RESEÑAS =====================
+// Añade únicamente reseñas reales cuya autoría y texto se hayan comprobado.
+const reviewsTrack = document.getElementById("reviewsTrack");
+const reviewCards = [...document.querySelectorAll("#reviewsTrack .review-card")];
+const reviewsDots = document.getElementById("reviewsDots");
+let reviewIndex = 0;
+function reviewsPerView(){
+  if (window.matchMedia("(max-width: 600px)").matches) return 1;
+  if (window.matchMedia("(max-width: 900px)").matches) return 2;
+  return 3;
+}
+function updateReviews(){
+  if (!reviewsTrack || !reviewCards.length) return;
+  const perView = reviewsPerView();
+  const maxIndex = Math.max(0, reviewCards.length - perView);
+  reviewIndex = Math.min(reviewIndex, maxIndex);
+  const cardWidth = reviewCards[0].getBoundingClientRect().width;
+  const gap = parseFloat(getComputedStyle(reviewsTrack).gap) || 0;
+  reviewsTrack.style.transform = `translateX(-${reviewIndex * (cardWidth + gap)}px)`;
+  [...(reviewsDots?.children || [])].forEach((dot, i) => {
+    dot.classList.toggle("is-active", i === reviewIndex);
+    dot.setAttribute("aria-current", i === reviewIndex ? "true" : "false");
+  });
+  const prev = document.getElementById("reviewsPrev");
+  const next = document.getElementById("reviewsNext");
+  if (prev) prev.disabled = reviewIndex === 0;
+  if (next) next.disabled = reviewIndex >= maxIndex;
+}
+function buildReviewDots(){
+  if (!reviewsDots) return;
+  reviewsDots.innerHTML = "";
+  const count = Math.max(1, reviewCards.length - reviewsPerView() + 1);
+  for(let i=0;i<count;i++){
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "review-dot";
+    dot.setAttribute("aria-label", `Mostrar reseña ${i + 1}`);
+    dot.addEventListener("click",()=>{reviewIndex=i;updateReviews();});
+    reviewsDots.appendChild(dot);
+  }
+  updateReviews();
+}
+document.getElementById("reviewsPrev")?.addEventListener("click",()=>{reviewIndex=Math.max(0,reviewIndex-1);updateReviews();restartReviewAutoplay();});
+document.getElementById("reviewsNext")?.addEventListener("click",()=>{reviewIndex=Math.min(Math.max(0,reviewCards.length-reviewsPerView()),reviewIndex+1);updateReviews();restartReviewAutoplay();});
+window.addEventListener("resize",buildReviewDots);
+buildReviewDots();
+
+// Desplazamiento automático del carrusel; se pausa cuando el usuario interactúa.
+let reviewAutoplay;
+function startReviewAutoplay(){
+  clearInterval(reviewAutoplay);
+  reviewAutoplay = setInterval(()=>{
+    const maxIndex = Math.max(0, reviewCards.length - reviewsPerView());
+    reviewIndex = reviewIndex >= maxIndex ? 0 : reviewIndex + 1;
+    updateReviews();
+  }, 5500);
+}
+function restartReviewAutoplay(){startReviewAutoplay();}
+const reviewsCarousel = document.querySelector(".reviews-carousel");
+reviewsCarousel?.addEventListener("mouseenter",()=>clearInterval(reviewAutoplay));
+reviewsCarousel?.addEventListener("mouseleave",startReviewAutoplay);
+reviewsCarousel?.addEventListener("focusin",()=>clearInterval(reviewAutoplay));
+reviewsCarousel?.addEventListener("focusout",startReviewAutoplay);
+startReviewAutoplay();

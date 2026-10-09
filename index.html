@@ -199,25 +199,45 @@
           </div>
         </div>
 
-        <div class="reviews-grid">
-          <article class="review-card">
-            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
-            <blockquote>“Comida fabulosa servida con un mimo al cliente increíble.”</blockquote>
-            <p>Reseña reciente · Google</p>
-          </article>
-          <article class="review-card">
-            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
-            <blockquote>“Buena comida y mejor servicio al mejor precio.”</blockquote>
-            <p>Reseña reciente · Google</p>
-          </article>
-          <article class="review-card">
-            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
-            <blockquote>“La comida estaba muy sabrosa, las raciones generosas y la atención excepcional.”</blockquote>
-            <p>Reseña reciente · Google</p>
-          </article>
+        <div class="reviews-carousel" aria-roledescription="carrusel" aria-label="Opiniones de clientes">
+          <div class="reviews-grid" id="reviewsTrack" aria-live="polite">
+            <article class="review-card">
+              <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
+              <blockquote>“Buen acierto para la zona. Agradable, excelente ambiente y delicioso menú casero, como todo lo demás.”</blockquote>
+              <p class="review-attribution"><strong>Susan Justiniano</strong><span>Google · hace 5 meses</span></p>
+            </article>
+            <article class="review-card">
+              <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
+              <blockquote>“Soy colombiano y los platos en verdad se parecen mucho a los de mi país. El servicio es agradable y me parece un precio justo…”</blockquote>
+              <p class="review-attribution"><strong>Esteban García</strong><span>Google · hace 3 meses</span></p>
+            </article>
+            <article class="review-card">
+              <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
+              <blockquote>“Me encantó todo, la comida súper rica y variada, la atención ni que decir. Volveré sí o sí.”</blockquote>
+              <p class="review-attribution"><strong>Dejanira Leon</strong><span>Google · hace 5 meses</span></p>
+            </article>
+            <article class="review-card">
+              <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
+              <blockquote>“De 10, no pongo más estrellas porque solo hay 5… delicioso y recomendable, sin duda repetiré.”</blockquote>
+              <p class="review-attribution"><strong>María Gloria Acosta Verón</strong><span>Google · hace 3 meses</span></p>
+            </article>
+            <article class="review-card">
+              <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
+              <blockquote>“Un sitio muy agradable y con muy buen servicio, muy amables. Menú del día muy variado y rico…”</blockquote>
+              <p class="review-attribution"><strong>Alicia Fernández</strong><span>Google · hace 5 meses</span></p>
+            </article>
+            <article class="review-card">
+              <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
+              <blockquote>“Cenamos de lujo, nos atendieron perfectamente, el servicio espectacular. Como dice Terminator, volveré.”</blockquote>
+              <p class="review-attribution"><strong>Oscar Lirio</strong><span>Google · hace 3 meses</span></p>
+            </article>
+          </div>
+          <div class="reviews-carousel__controls">
+            <button class="review-arrow" type="button" id="reviewsPrev" aria-label="Reseñas anteriores">←</button>
+            <div class="review-dots" id="reviewsDots" aria-label="Elegir reseña"></div>
+            <button class="review-arrow" type="button" id="reviewsNext" aria-label="Siguientes reseñas">→</button>
+          </div>
         </div>
-
-        <p class="reviews__note">Las reseñas mostradas se pueden sustituir por las capturas o textos que el restaurante quiera destacar antes de publicar la versión definitiva.</p>
       </div>
     </section>
 
