@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#315d45"/><stop offset="1" stop-color="#17130f"/></linearGradient>
+  <radialGradient id="p"><stop stop-color="#f4d26e"/><stop offset="1" stop-color="#b56b25"/></radialGradient>
+</defs>
+<rect width="1200" height="700" fill="url(#g)"/>
+<circle cx="930" cy="140" r="260" fill="#d8a431" opacity=".2"/>
+<circle cx="610" cy="365" r="230" fill="#ece4d4"/>
+<circle cx="610" cy="365" r="175" fill="url(#p)"/>
+<ellipse cx="535" cy="330" rx="65" ry="48" fill="#6a321d"/>
+<ellipse cx="695" cy="365" rx="70" ry="48" fill="#fff8e8"/>
+<circle cx="695" cy="365" r="22" fill="#d99b2e"/>
+<ellipse cx="600" cy="470" rx="90" ry="28" fill="#8a4322"/>
+<text x="70" y="110" fill="#f0c85a" font-family="Georgia,serif" font-size="28" letter-spacing="5">LA PATRONA</text>
+<text x="70" y="155" fill="white" font-family="Georgia,serif" font-size="54">Cocina colombiana</text>
+<text x="70" y="205" fill="white" opacity=".7" font-family="Arial,sans-serif" font-size="20">RECURSO VISUAL TEMPORAL · SUSTITUIR POR FOTO REAL</text>
+</svg>
