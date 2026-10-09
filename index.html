@@ -3,18 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="La Patrona · Cocina colombiana en Alcorcón. Bandeja paisa, picada colombiana, arepas, empanadas y mucho más.">
+  <meta name="description" content="La Patrona - Cocina colombiana en Alcorcón. Bandeja paisa, picada colombiana, arepas, empanadas y mucho más.">
   <meta name="theme-color" content="#17130f">
-  <title>La Patrona · Cocina colombiana en Alcorcón</title>
+  <title>La Patrona - Cocina colombiana en Alcorcón</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "La Patrona",
+    "image": "assets/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. del Alcalde José Aranda, 53 - Local 7",
+      "addressLocality": "Alcorcón",
+      "addressRegion": "Madrid",
+      "postalCode": "28924",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34633602527",
+    "servesCuisine": "Colombiana",
+    "priceRange": "€€"
+  }
+  </script>
 </head>
 <body>
   <div class="topbar">
     <div class="container topbar__inner">
-      <span>Alcorcón · Madrid</span>
+      <span>Alcorcón • Madrid</span>
       <span class="topbar__dot">•</span>
       <span>Cocina colombiana y sabores de casa</span>
     </div>
@@ -28,14 +47,18 @@
           <small>COCINA COLOMBIANA</small>
         </span>
       </a>
-
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-
       <nav class="nav__links" aria-label="Navegación principal">
         <a href="#carta">Carta</a>
         <a href="#nosotros">La casa</a>
         <a href="#opiniones">Opiniones</a>
         <a href="#visitanos">Visítanos</a>
+        <a href="tel:+34633602527" class="button--call" aria-label="Llamar a La Patrona">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          Llámanos
+        </a>
       </nav>
     </div>
   </header>
@@ -45,19 +68,22 @@
       <div class="hero__grain"></div>
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="eyebrow">Sabor colombiano · Alcorcón</p>
-          <h1>Donde Colombia<br><em>se sienta a la mesa.</em></h1>
-          <p class="hero__lead">Recetas con carácter, platos para compartir y ese sabor de casa que convierte una comida en un recuerdo.</p>
+          <p class="eyebrow" style="letter-spacing: 0.15em;">— EL SABOR DE COLOMBIA EN TU MESA</p>
+          <h1 style="font-size: clamp(50px, 6.5vw, 82px); margin-bottom: 8px;">La Patrona<span style="color: var(--gold-2);">.</span></h1>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(26px, 3.2vw, 38px); color: rgba(255,255,255,0.92); font-weight: 600; margin-bottom: 20px; line-height: 1.2;">
+            Donde Colombia<br><em>se sienta a la mesa.</em>
+          </h2>
+          <p class="hero__lead" style="font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.8); max-width: 520px; margin-bottom: 30px;">
+            Nuestra tierra, nuestra pasión por la buena cocina. Recetas con carácter, platos para compartir y ese sabor de casa que convierte una comida en recuerdo.
+          </p>
           <div class="hero__actions">
             <a class="button button--primary" href="#carta">Ver la carta</a>
             <a class="button button--ghost" href="#visitanos">Cómo encontrarnos</a>
-            <!-- UBER EATS — CTA / REDIRECCIÓN
-                 Si el restaurante deja de utilizar Uber Eats, elimina este botón. -->
-            <a class="button button--accent" href="https://www.ubereats.com/es/store/la-patrona-avenida-alcalde-jose-aranda-53/jO6tybw8VfOr_xKT1TRIRQ?diningMode=PICKUP&utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free&utm_source=google-pas&rwg_token=AE37R_i60bjzCSKa6v9v3Yi1m6uCg0NK4VLoARVexen96Df1X4Bsz3ItR0xQzvW2rDom9WKEqFQAN2vDShVNbfoKPNUCQ40kBQ%3D%3D" target="_blank" rel="noopener noreferrer">Pedir en Uber Eats ↗</a>
+            <a class="button button--accent" href="https://www.ubereats.com/es/store/la-patrona-avenida-alcalde-jose-aranda-53/jO6tybw8VfOr_xKT1TRIRQ?diningMode=PICKUP" target="_blank" rel="noopener noreferrer">Pedir en Uber Eats ➔</a>
           </div>
           <div class="hero__note">
-            <span class="seal">★</span>
-            <span><strong>Especialidades colombianas</strong><br>Picada · Bandeja paisa · Arepas · Empanadas</span>
+            <span class="seal">✓</span>
+            <span><strong>Especialidades colombianas</strong><br>Picada • Bandeja paisa • Arepas • Empanadas</span>
           </div>
         </div>
 
@@ -104,9 +130,8 @@
             <p class="eyebrow">Lo que pediríamos primero</p>
             <h2>Los favoritos de <em>la casa.</em></h2>
           </div>
-          <a href="#carta" class="text-link">Ver toda la carta →</a>
+          <a href="#carta" class="text-link">Ver toda la carta ➔</a>
         </div>
-
         <div class="featured-grid">
           <article class="dish-card dish-card--hero">
             <div class="dish-art dish-art--picada"><img src="assets/picada-colombiana.jpg" alt="Picada Colombiana de La Patrona" onerror="this.style.display='none'"><span>Picada</span></div>
@@ -116,7 +141,6 @@
               <p>Carne asada, costilla, chicharrón, chorizo, morcilla, alitas, patacón, maduro, yuca, papa criolla, arepa y tomate.</p>
             </div>
           </article>
-
           <article class="dish-card">
             <div class="dish-art dish-art--bandeja"><img src="assets/bandeja-paisa.jpg" alt="Bandeja Paisa de La Patrona" onerror="this.style.display='none'"><span>Bandeja</span></div>
             <div class="dish-card__body">
@@ -125,7 +149,6 @@
               <p>Uno de los grandes clásicos colombianos de la carta.</p>
             </div>
           </article>
-
           <article class="dish-card">
             <div class="dish-art dish-art--arepa"><img src="assets/arepa-chorizo.jpg" alt="Arepa con Chorizo de La Patrona" onerror="this.style.display='none'"><span>Arepa</span></div>
             <div class="dish-card__body">
@@ -147,7 +170,6 @@
           </div>
           <p class="section-head__desc">Una selección amplia de sabores colombianos, desayunos, raciones, platos y bebidas para disfrutar en La Patrona.</p>
         </div>
-
         <div class="menu-tabs" role="tablist" aria-label="Categorías de la carta">
           <button class="menu-tab is-active" data-filter="colombianas">Colombianas</button>
           <button class="menu-tab" data-filter="combinados">Platos</button>
@@ -156,12 +178,9 @@
           <button class="menu-tab" data-filter="bebidas">Bebidas</button>
           <button class="menu-tab" data-filter="todo">Toda la carta</button>
         </div>
-
         <div id="menuGrid" class="menu-grid"></div>
         <div class="menu-order-cta" style="display:flex;justify-content:center;margin-top:32px">
-          <!-- UBER EATS — CTA / REDIRECCIÓN
-               Si el restaurante deja de utilizar Uber Eats, elimina este bloque. -->
-          <a class="button button--accent" href="https://www.ubereats.com/es/store/la-patrona-avenida-alcalde-jose-aranda-53/jO6tybw8VfOr_xKT1TRIRQ?diningMode=PICKUP&utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free&utm_source=google-pas&rwg_token=AE37R_i60bjzCSKa6v9v3Yi1m6uCg0NK4VLoARVexen96Df1X4Bsz3ItR0xQzvW2rDom9WKEqFQAN2vDShVNbfoKPNUCQ40kBQ%3D%3D" target="_blank" rel="noopener noreferrer">Pedir en Uber Eats ↗</a>
+          <a class="button button--accent" href="https://www.ubereats.com/es/store/la-patrona-avenida-alcalde-jose-aranda-53/jO6tybw8VfOr_xKT1TRIRQ?diningMode=PICKUP" target="_blank" rel="noopener noreferrer">Pedir en Uber Eats ➔</a>
         </div>
       </div>
     </section>
@@ -198,44 +217,43 @@
             <small>Valoración visible en Google Maps</small>
           </div>
         </div>
-
         <div class="reviews-carousel" aria-roledescription="carrusel" aria-label="Opiniones de clientes">
           <div class="reviews-grid" id="reviewsTrack" aria-live="polite">
             <article class="review-card">
               <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
-              <blockquote>“Buen acierto para la zona. Agradable, excelente ambiente y delicioso menú casero, como todo lo demás.”</blockquote>
-              <p class="review-attribution"><strong>Susan Justiniano</strong><span>Google · hace 5 meses</span></p>
+              <blockquote>Buen acierto para la zona. Agradable, excelente ambiente y delicioso menú casero, como todo lo demás.</blockquote>
+              <p class="review-attribution"><strong>Susan Justiniano</strong><span>Google • Hace 5 meses</span></p>
             </article>
             <article class="review-card">
               <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
-              <blockquote>“Soy colombiano y los platos en verdad se parecen mucho a los de mi país. El servicio es agradable y me parece un precio justo…”</blockquote>
-              <p class="review-attribution"><strong>Esteban García</strong><span>Google · hace 3 meses</span></p>
+              <blockquote>Soy colombiano y los platos en verdad se parecen mucho a los de mi país. El servicio es agradable y me parece un precio justo.</blockquote>
+              <p class="review-attribution"><strong>Esteban García</strong><span>Google • Hace 3 meses</span></p>
             </article>
             <article class="review-card">
               <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
-              <blockquote>“Me encantó todo, la comida súper rica y variada, la atención ni que decir. Volveré sí o sí.”</blockquote>
-              <p class="review-attribution"><strong>Dejanira Leon</strong><span>Google · hace 5 meses</span></p>
+              <blockquote>Me encantó todo, la comida súper rica y variada, la atención ni que decir. Volveré sí o sí.</blockquote>
+              <p class="review-attribution"><strong>Dejanira Leon</strong><span>Google • Hace 5 meses</span></p>
             </article>
             <article class="review-card">
               <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
-              <blockquote>“De 10, no pongo más estrellas porque solo hay 5… delicioso y recomendable, sin duda repetiré.”</blockquote>
-              <p class="review-attribution"><strong>María Gloria Acosta Verón</strong><span>Google · hace 3 meses</span></p>
+              <blockquote>De 10, no pongo más estrellas porque solo hay 5. Delicioso y recomendable, sin duda repetiré.</blockquote>
+              <p class="review-attribution"><strong>María Gloria Acosta Verón</strong><span>Google • Hace 3 meses</span></p>
             </article>
             <article class="review-card">
               <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
-              <blockquote>“Un sitio muy agradable y con muy buen servicio, muy amables. Menú del día muy variado y rico…”</blockquote>
-              <p class="review-attribution"><strong>Alicia Fernández</strong><span>Google · hace 5 meses</span></p>
+              <blockquote>Un sitio muy agradable y con muy buen servicio, muy amables. Menú del día muy variado y rico.</blockquote>
+              <p class="review-attribution"><strong>Alicia Fernández</strong><span>Google • Hace 5 meses</span></p>
             </article>
             <article class="review-card">
               <div class="review-stars" aria-label="Reseña positiva">★★★★★</div>
-              <blockquote>“Cenamos de lujo, nos atendieron perfectamente, el servicio espectacular. Como dice Terminator, volveré.”</blockquote>
-              <p class="review-attribution"><strong>Oscar Lirio</strong><span>Google · hace 3 meses</span></p>
+              <blockquote>Cenamos de lujo, nos atendieron perfectamente, el servicio espectacular. Como dice Terminator, volveré.</blockquote>
+              <p class="review-attribution"><strong>Oscar Lirio</strong><span>Google • Hace 3 meses</span></p>
             </article>
           </div>
           <div class="reviews-carousel__controls">
-            <button class="review-arrow" type="button" id="reviewsPrev" aria-label="Reseñas anteriores">←</button>
+            <button class="review-arrow" type="button" id="reviewsPrev" aria-label="Reseñas anteriores">‹</button>
             <div class="review-dots" id="reviewsDots" aria-label="Elegir reseña"></div>
-            <button class="review-arrow" type="button" id="reviewsNext" aria-label="Siguientes reseñas">→</button>
+            <button class="review-arrow" type="button" id="reviewsNext" aria-label="Siguientes reseñas">›</button>
           </div>
         </div>
       </div>
@@ -246,21 +264,22 @@
         <div>
           <p class="eyebrow">Visítanos</p>
           <h2>Nos vemos en <em>Alcorcón.</em></h2>
-          <p class="visit__address">Av. del Alcalde José Aranda, 53 · Local 7<br>28924 Alcorcón, Madrid</p>
+          <p class="visit__address">Av. del Alcalde José Aranda, 53 • Local 7<br>28924 Alcorcón, Madrid</p>
           <div class="visit__actions">
-            <a class="button button--primary" href="https://www.google.com/maps/search/?api=1&query=La%20Patrona%2C%20Av.%20del%20Alcalde%20Jos%C3%A9%20Aranda%2053%2C%20Alcorc%C3%B3n" target="_blank" rel="noopener">Cómo encontrarnos ↗</a>
+            <a class="button button--primary" href="https://www.google.com/maps/search/?api=1&query=La%20Patrona%2C%20Av.%20del%20Alcalde%20Jos%C3%A9%20Aranda%2053%2C%20Alcorc%C3%B3n" target="_blank" rel="noopener">Cómo encontrarnos ➔</a>
+            <a class="button button--ghost-dark" href="tel:+34633602527">Llamar al local</a>
           </div>
         </div>
         <div class="hours-card">
           <p class="eyebrow">Horario de apertura</p>
           <div class="hours">
-            <div><span>Lunes</span><b>09:00 – 22:00*</b></div>
-            <div><span>Martes</span><b>09:00 – 22:00*</b></div>
-            <div><span>Miércoles</span><b>09:00 – 22:00*</b></div>
-            <div><span>Jueves</span><b>09:00 – 22:00*</b></div>
-            <div><span>Viernes</span><b>09:00 – 22:00*</b></div>
-            <div><span>Sábado</span><b>09:00 – 19:00*</b></div>
-            <div><span>Domingo</span><b>09:00 – 19:00*</b></div>
+            <div><span>Lunes</span><b>09:00 - 22:00</b></div>
+            <div><span>Martes</span><b>09:00 - 22:00</b></div>
+            <div><span>Miércoles</span><b>09:00 - 22:00</b></div>
+            <div><span>Jueves</span><b>09:00 - 22:00</b></div>
+            <div><span>Viernes</span><b>09:00 - 22:00</b></div>
+            <div><span>Sábado</span><b>09:00 - 19:00</b></div>
+            <div><span>Domingo</span><b>09:00 - 19:00</b></div>
           </div>
         </div>
       </div>
@@ -277,13 +296,11 @@
         <a href="#nosotros">La casa</a>
         <a href="#opiniones">Opiniones</a>
         <a href="#visitanos">Visítanos</a>
-        <!-- UBER EATS — CTA / REDIRECCIÓN: elimina este enlace si no se utiliza. -->
-        <a href="https://www.ubereats.com/es/store/la-patrona-avenida-alcalde-jose-aranda-53/jO6tybw8VfOr_xKT1TRIRQ?diningMode=PICKUP&utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free&utm_source=google-pas&rwg_token=AE37R_i60bjzCSKa6v9v3Yi1m6uCg0NK4VLoARVexen96Df1X4Bsz3ItR0xQzvW2rDom9WKEqFQAN2vDShVNbfoKPNUCQ40kBQ%3D%3D" target="_blank" rel="noopener noreferrer">Pedir en Uber Eats ↗</a>
+        <a href="https://www.ubereats.com/es/store/la-patrona-avenida-alcalde-jose-aranda-53/jO6tybw8VfOr_xKT1TRIRQ?diningMode=PICKUP" target="_blank" rel="noopener noreferrer">Pedir en Uber Eats ➔</a>
       </div>
-      <div class="footer__legal">© <span id="year"></span> La Patrona · Alcorcón</div>
+      <div class="footer__legal">© <span id="year"></span> La Patrona • Alcorcón</div>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
