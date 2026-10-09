@@ -4,11 +4,11 @@
 
 // =========================================================
 // UBER EATS — CTA / REDIRECCIÓN
-// Si el comercio NO desea Uber Eats, elimina los enlaces
-// marcados en index.html. No hay dependencia técnica.
+// Si el comercio NO desea Uber Eats, elimina los bloques marcados
+// en index.html. No hay dependencia técnica.
 // =========================================================
 
-const UBER_EATS_URL = "https://www.ubereats.com/es/store/la-patrona/jO6tybw8VfOr_xKT1TRIRQ";
+const UBER_EATS_URL = "https://www.ubereats.com/es/store/la-patrona-avenida-alcalde-jose-aranda-53/jO6tybw8VfOr_xKT1TRIRQ?diningMode=PICKUP&utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free&utm_source=google-pas&rwg_token=AE37R_i60bjzCSKa6v9v3Yi1m6uCg0NK4VLoARVexen96Df1X4Bsz3ItR0xQzvW2rDom9WKEqFQAN2vDShVNbfoKPNUCQ40kBQ%3D%3D";
 
 // =========================================================
 // CARTA Y PRECIOS
