@@ -176,9 +176,7 @@ const reviewCards = [...document.querySelectorAll("#reviewsTrack .review-card")]
 const reviewsDots = document.getElementById("reviewsDots");
 let reviewIndex = 0;
 function reviewsPerView(){
-  if (window.matchMedia("(max-width: 600px)").matches) return 1;
-  if (window.matchMedia("(max-width: 900px)").matches) return 2;
-  return 3;
+  return 1;
 }
 function updateReviews(){
   if (!reviewsTrack || !reviewCards.length) return;
