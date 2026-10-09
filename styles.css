@@ -243,3 +243,7 @@ h2{font-size:clamp(42px,5vw,66px);letter-spacing:-.04em}
   .menu-grid{grid-template-columns:1fr}
   .footer__links{flex-wrap:wrap}
 }
+/* Oculta el plato ilustrado y las tarjetas flotantes de la portada */
+.hero__visual {
+  display: none !important;
+}
