@@ -85,7 +85,19 @@ button{font:inherit}
 .button--light{background:#fff;color:var(--forest-green)}
 
 /* HERO principal con fondo Verde Bosque */
-.hero{position:relative;overflow:hidden;background-color:var(--forest-green);background-image:linear-gradient(rgba(27,56,39,0.85), rgba(19,40,27,0.92)), url("assets/hero.jpg");background-size:cover;background-position:center;color:#fff;min-height:720px;display:grid;align-items:center}
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--ink);
+  /* Imagen de fondo colocada hacia la derecha con degradado progresivo a la izquierda */
+  background-image: linear-gradient(to right, rgba(18, 38, 27, 0.98) 0%, rgba(18, 38, 27, 0.85) 40%, rgba(18, 38, 27, 0.25) 80%, rgba(18, 38, 27, 0.1) 100%), url("assets/hero-2.jpg");
+  background-size: cover;
+  background-position: center right;
+  color: #fff;
+  min-height: 720px;
+  display: grid;
+  align-items: center;
+}
 .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(226,168,43,.2),transparent 35%),radial-gradient(circle at 20% 100%,rgba(19,40,27,.95),transparent 50%)}
 .hero__grain{position:absolute;inset:0;opacity:.08;background-image:radial-gradient(#fff .7px,transparent .7px);background-size:8px 8px}
 .hero__grid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:30px;padding:80px 0}
